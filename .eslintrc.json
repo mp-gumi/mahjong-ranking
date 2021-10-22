@@ -1,3 +1,22 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "next",
+    "plugin:css-modules/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "sort-destructure-keys/sort-destructure-keys": 2,
+    "no-undef": "off",
+    "import/order": [
+      "error",
+      {
+        "alphabetize": {
+          "order": "asc"
+        }
+      }
+    ]
+  },
+  "plugins": ["css-modules", "sort-destructure-keys"]
 }
